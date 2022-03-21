@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <Title>Chance's Portfolio</Title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+        <script>
+            window.addEventListener("hashchange", () => {
+            document.getElementById("menu__toggle").checked = false; });
+        </script>
+            
+             img {
+                max-width: 100%;
+                height:auto;
+            }
+            .container {
+                display:grid;
+                grid-template-columns:repeat(12, 1fr);
+                grid-auto-rows: minmax(100px,auto);
+            }
+            
+/*content for mobile goes here*/
+            
+
+            
+            
+/*content for tablet goes here*/
+@media only screen and (min-width:620px) {
+            
+}
+
+            
+/*content for computer goes here*/
+@media only screen and (min-width:900px) {
+
+            nav {
+            grid-column: 1/13;
+            height: 90px;
+            }  
+            .hero-image {
+            grid-column: 1/13;
+            height: 500px;
+            background-image: url(images/hero-image.jpg);
+            background-color: rgba(0,0,0,0.7);
+            background-blend-mode: darken;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            .big-text {
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 25px;
+            letter-spacing: 0.5em;
+            }
+            .small-text {
+            font-size: 25px;
+            letter-spacing: 0;
+            color: white;
+            }
+            section {
+            grid-column: 1/13;
+            font-size: 2rem;
+            padding-left: 30px;
+            }
+            .main-left {
+            grid-column: 1/9;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size:1.2em;
+            line-height: 40px;
+            }
+            .main-right {
+            grid-column: 9/13;
+
+            }
+            .panel-1 {
+            grid-column: 1/13;
+            padding-left: 30px;
+            }
+
+            .panel-1-left {
+            grid-column: 1/6;
+            padding-left: 40px;
+            }
+
+            .panel-1-right {
+            grid-column: 7/13;
+            }
+}
+        </style>
+    </head>
+    <body>
+        
+            <div class="container">
+    
+            <nav>
+            <a href="class-work.html">Class Work</a>
+            <a href="professional-work.html">Professional Work</a>
+            <a href="contact.html">Contact</a>
+            </nav>
+                
+            <div class="hero-image big-text small-text">
+            <div class="big-text">
+            <p>Chance St Clair</p>
+            </div>
+            <div>
+            <p>UX/UI Design | Web Development</p>   
+            </div>
+            </div>  
+             
+                
+            <section>
+            <p>About<p> 
+            </section>
+        
+            <div class="main-left">
+            <p>Chance is currently a student at James Madison University. He has plans to graduate in Spring '22 with his Bachelor of Science in Media Arts and Design. Alongside that, Chance is concentrating in Interactive Design with the goal to move toward securing a full time position in the field.</p>
+            </div>
+
+            <div class="main-right">
+            <img src="images/IMG_0726.jpg">  
+            </div>
+            
+            <!--<div class="main-right">
+            <img src="images/headshot.jpg">            
+            </div>-->
+
+            <div class="panel-1">
+            <h2>Interactive Design</h2>   
+            </div>
+
+            <div class="panel-1-left">
+            <iframe width="560" height="315" src="https://c-stclair.github.io/bootstrap-responsive-design/"></iframe>
+            </div>
+
+            <div class="panel-1-right">
+            <iframe width="560" height="315" src="https://c-stclair.github.io/Final-Project/index.html"></iframe>
+            </div>
+
+                
+            
+        </div>
+
+    </body>
+</html>
+       
